@@ -15,7 +15,7 @@ const Navbar = () => {
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
                 {[{ title: "Learn Blockchain", link: '/blockchain' }, { title: "Market", link: '/market' }, { title: "Exchange", link: '/exchange' }, { title: "News", link: '/news' }].map((item) => (
-                    <li className={`mx-4 cursor-pointer my-2 text-lg`}>
+                    <li key={item.title} className={`mx-4 cursor-pointer my-2 text-lg`}>
                         <Link to={item.link}>{item.title}</Link>
                     </li >
                 ))}
@@ -32,7 +32,7 @@ const Navbar = () => {
                                 <AiOutlineClose onClick={() => setToggleMenu(false)} />
                             </li>
                             {[{ title: "Learn Blockchain", link: '/blockchain' }, { title: "Market", link: '/market' }, { title: "Exchange", link: '/exchange' }, { title: "News", link: '/news' }].map((item) => (
-                                <li className={`mx-4 cursor-pointer my-2 text-lg`}>
+                                <li key={item.title} className={`mx-4 cursor-pointer my-2 text-lg`}>
                                     <Link to={item.link}>{item.title}</Link>
                                 </li >
                             ))}
