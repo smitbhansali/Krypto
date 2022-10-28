@@ -11,7 +11,7 @@ const Footer = () => (
             <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
                 <Link to='/blockchain'><p className="text-white text-base text-center mx-2 cursor-pointer">Learn Blockchain</p></Link>
                 <Link to='/market'><p className="text-white text-base text-center mx-2 cursor-pointer">Market</p></Link>
-                <Link to='/exchange'><p className="text-white text-base text-center mx-2 cursor-pointer">Exchange</p></Link>
+                <Link to='/converter'><p className="text-white text-base text-center mx-2 cursor-pointer">Converter</p></Link>
                 <Link to='/news'><p className="text-white text-base text-center mx-2 cursor-pointer">News</p></Link>
             </div>
         </div>

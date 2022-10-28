@@ -14,7 +14,7 @@ const Navbar = () => {
                 <Link to='/'><img src={logo} alt="logo" className='w-32 pointer-cursor' /></Link>
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-                {[{ title: "Learn Blockchain", link: '/blockchain' }, { title: "Market", link: '/market' }, { title: "Exchange", link: '/exchange' }, { title: "News", link: '/news' }].map((item) => (
+                {[{ title: "Learn Blockchain", link: '/blockchain' }, { title: "Market", link: '/market' }, { title: "Converter", link: '/converter' }, { title: "News", link: '/news' }].map((item) => (
                     <li key={item.title} className={`mx-4 cursor-pointer my-2 text-lg`}>
                         <Link to={item.link}>{item.title}</Link>
                     </li >
@@ -31,7 +31,7 @@ const Navbar = () => {
                             <li className='text-xl w-full my-2'>
                                 <AiOutlineClose onClick={() => setToggleMenu(false)} />
                             </li>
-                            {[{ title: "Learn Blockchain", link: '/blockchain' }, { title: "Market", link: '/market' }, { title: "Exchange", link: '/exchange' }, { title: "News", link: '/news' }].map((item) => (
+                            {[{ title: "Learn Blockchain", link: '/blockchain' }, { title: "Market", link: '/market' }, { title: "Converter", link: '/converter' }, { title: "News", link: '/news' }].map((item) => (
                                 <li key={item.title} className={`mx-4 cursor-pointer my-2 text-lg`}>
                                     <Link to={item.link}>{item.title}</Link>
                                 </li >

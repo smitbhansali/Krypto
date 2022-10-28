@@ -22,7 +22,7 @@ const Market = () => {
         <div className='flex flex-col w-full justify-center items-center'>
             <div className='flex mf:flex-col flex-col items-center justify-center py-12'>
                 <div className='flex flex-1 justify-start flex-col mf:mr-10'></div>
-                <div className="overflow-x-auto relative pl-3.5">
+                <div className="overflow-x-auto relative pl-20">
                     <table className="w-1/2 text-sm text-left text-white white-glassmorphism border-none">
                         <thead className="text-lg text-cyan-300 uppercase">
                             <tr>

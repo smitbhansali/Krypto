@@ -7,4 +7,4 @@ export { default as Welcome } from './Welcome';
 export { default as Blockchain } from './Blockchain';
 export { default as Market } from './Market';
 export { default as News } from './News';
-export { default as Exchange } from './Exchange';
+export { default as Converter } from './Converter';

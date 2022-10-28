@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Navbar, Footer, Services, Transactions, Welcome, Blockchain, News, Exchange, Market } from './components';
+import { Navbar, Footer, Services, Transactions, Welcome, Blockchain, News, Converter, Market } from './components';
 import { createBrowserRouter, RouterProvider, Route, } from "react-router-dom";
 
 const App = () => {
@@ -29,12 +29,12 @@ const App = () => {
         </div>
     },
     {
-      path: '/exchange',
+      path: '/converter',
       element:
         <div className="min-h-screen">
           <div className='gradient-bg-welcome'>
             <Navbar />
-            <Exchange />
+            <Converter />
           </div>
           <Footer />
         </div>
