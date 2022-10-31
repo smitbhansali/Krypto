@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 const Market = () => {
-    const url = 'http://localhost:5000/api/market/getmarket';
+    const url = 'http://localhost:5000/api/getmarket';
     const [data, setdata] = useState([])
     useEffect(() => {
         fetch(url, {
@@ -11,7 +11,6 @@ const Market = () => {
             }
         }).then(async (response) => {
             setdata(await response.json())
-            console.log(data);
         }).catch((response) => {
             console.log(response);
         })
@@ -21,8 +20,8 @@ const Market = () => {
     return (
         <div className='flex flex-col w-full justify-center items-center'>
             <div className='flex mf:flex-col flex-col items-center justify-center py-12'>
-                <div className='flex flex-1 justify-start flex-col mf:mr-10'></div>
-                <div className="overflow-x-auto relative pl-20">
+                <div className='flex flex-1 justify-center flex-col mf:mr-10'></div>
+                <div className="flex justify-center overflow-x-auto relative">
                     <table className="w-1/2 text-sm text-left text-white white-glassmorphism border-none">
                         <thead className="text-lg text-cyan-300 uppercase">
                             <tr>

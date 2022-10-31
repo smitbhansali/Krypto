@@ -18,4 +18,20 @@ router.post('/getmarket', async (req, res) => {
         res.status(500).send(error);
     }
 });
+router.post('/getnews', async (req, res) => {
+    try {
+        axios.get('https://newsdata.io/api/1/news?apikey=pub_12881bc3a386437430fa490cc1ef6cca2548a&q=blockchain&language=en')
+            .then((result) => {
+                console.log('data received')
+                res.json(result.data)
+            }).catch((err) => {
+                console.log(err.message)
+                res.status(500).send(err);
+            });
+    }
+    catch (error) {
+        console.error(error.message)
+        res.status(500).send(error);
+    }
+});
 module.exports = router

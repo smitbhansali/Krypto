@@ -3,7 +3,7 @@ import { BiChevronDown } from 'react-icons/bi'
 import { BsArrowLeftRight } from 'react-icons/bs'
 
 const Converter = () => {
-    const url = 'http://localhost:5000/api/market/getmarket';
+    const url = 'http://localhost:5000/api/getmarket';
     const [data, setdata] = useState([])
     useEffect(() => {
         fetch(url, {
@@ -13,7 +13,6 @@ const Converter = () => {
             }
         }).then(async (response) => {
             setdata(await response.json())
-            console.log(data);
         }).catch((response) => {
             console.log(response);
         })
@@ -91,8 +90,8 @@ const Converter = () => {
             .catch((error) => { console.log('error', error); setCryptoinput(0) });
     }
 
-    const [cryptoinput, setCryptoinput] = useState(1)
-    const [currinput, setCurrinput] = useState(1)
+    const [cryptoinput, setCryptoinput] = useState(0)
+    const [currinput, setCurrinput] = useState(0)
 
     const cryptochange = (event) => {
         setCryptoinput(event.target.value);
