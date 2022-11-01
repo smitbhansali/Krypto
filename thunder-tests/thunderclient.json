@@ -27,7 +27,7 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2022-10-31T05:15:35.763Z",
-    "modified": "2022-10-31T05:17:25.528Z",
+    "modified": "2022-11-01T07:26:10.004Z",
     "headers": [
       {
         "name": "Content-Type",
@@ -35,6 +35,11 @@
       }
     ],
     "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"page\" : 0\n}",
+      "form": []
+    },
     "tests": []
   }
 ]

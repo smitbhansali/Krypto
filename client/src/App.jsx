@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import React from 'react';
 import { Navbar, Footer, Services, Transactions, Welcome, Blockchain, News, Converter, Market } from './components';
-import { createBrowserRouter, RouterProvider, Route, } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const App = () => {
   const router = createBrowserRouter([

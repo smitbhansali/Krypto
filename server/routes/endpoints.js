@@ -20,7 +20,9 @@ router.post('/getmarket', async (req, res) => {
 });
 router.post('/getnews', async (req, res) => {
     try {
-        axios.get('https://newsdata.io/api/1/news?apikey=pub_12881bc3a386437430fa490cc1ef6cca2548a&q=blockchain&language=en')
+        const { page } = req.body;
+        console.log(page)
+        axios.get(`https://newsdata.io/api/1/news?apikey=pub_128818326b49207ddc09b9d381b42a943bf3c&q=blockchain&language=en&page=${page}`)
             .then((result) => {
                 console.log('data received')
                 res.json(result.data)
