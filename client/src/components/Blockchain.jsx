@@ -65,6 +65,9 @@ const Blockchain = () => {
     ]
     return (
         <div className='flex flex-col w-full justify-start items-center'>
+            <h1 className='text-3xl sm:text-5xl text-white text-gradient py-1'>
+                Learn Blockchain
+            </h1>
             <div className='flex mf:flex-col flex-col items-start justify-between md:p-20 py-12 px-4'>
                 <div className='flex flex-1 justify-start flex-col mf:mr-10'></div>
                 {data.map((faq) => (
