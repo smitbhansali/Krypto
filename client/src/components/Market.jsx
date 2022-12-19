@@ -19,7 +19,7 @@ const Market = () => {
     let headings = ['Rank', 'Name', 'Symbol', 'Price (USD)', 'Market Cap Dominance', 'Volume (last 24H)', 'Total Supply']
     return (
         <div className='flex flex-col w-full justify-center items-center'>
-            <h1 className='text-3xl sm:text-5xl text-white text-gradient py-1'>
+            <h1 className='text-3xl sm:text-5xl text-white py-1'>
                 Market
             </h1>
             <div className='flex mf:flex-col flex-col items-center justify-center py-12'>
